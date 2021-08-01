@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24c-Fe-igj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,271 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoraGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rjd-sg-208">
+                                <rect key="frame" x="0.0" y="729" width="414" height="133"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRt-q2-iG0">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="133"/>
+                                        <gestureRecognizers/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="✌️">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="120" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSOriginalFont" size="150" name=".AppleColorEmojiUI"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="SuB-d1-3AY" appends="YES" id="Kcn-hv-vTV"/>
+                                        </connections>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89V-Hn-Ne7">
+                                        <rect key="frame" x="144.5" y="0.0" width="125" height="133"/>
+                                        <gestureRecognizers/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="✊">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="120" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSOriginalFont" size="120" name=".AppleColorEmojiUI"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="MDl-yv-kPn" appends="YES" id="5Yi-r2-fuD"/>
+                                        </connections>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyo-hJ-OE9">
+                                        <rect key="frame" x="289.5" y="0.0" width="124.5" height="133"/>
+                                        <gestureRecognizers/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="✋">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="120" name=".AppleColorEmojiUI"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0tr-vA-vik" appends="YES" id="1JP-OM-TT6"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rYK-3o-5oh">
+                                <rect key="frame" x="125.5" y="156" width="163" height="409"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-ui-wjf">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dN-wn-b6w">
+                                        <rect key="frame" x="0.0" y="229.5" width="163" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請出拳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrc-7t-WXv">
+                                <rect key="frame" x="170.5" y="680" width="73" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.74509803919999995" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rjd-sg-208" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9gf-Fp-z20"/>
+                            <constraint firstItem="jrc-7t-WXv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HUH-Bf-8vF"/>
+                            <constraint firstItem="0dN-wn-b6w" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KFJ-9S-shK"/>
+                            <constraint firstItem="Rjd-sg-208" firstAttribute="top" secondItem="jrc-7t-WXv" secondAttribute="bottom" constant="20" id="RNt-AX-9Ef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rjd-sg-208" secondAttribute="bottom" id="naP-XA-gk9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rjd-sg-208" secondAttribute="trailing" id="saN-5i-3Zm"/>
+                            <constraint firstItem="rYK-3o-5oh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xxh-6d-jsl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9ea-mv-eg0"/>
+                    <connections>
+                        <outlet property="myLabel" destination="0dN-wn-b6w" id="GQw-sc-RMn"/>
+                        <outlet property="pcLabel" destination="Z5N-ui-wjf" id="kU6-no-YFb"/>
+                        <outlet property="resLabel" destination="jrc-7t-WXv" id="f7H-cO-hlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SuB-d1-3AY">
+                    <connections>
+                        <action selector="Scissors:" destination="BYZ-38-t0r" id="wVY-63-Asj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MDl-yv-kPn">
+                    <connections>
+                        <action selector="Stone:" destination="BYZ-38-t0r" id="2Pa-6D-g3O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0tr-vA-vik">
+                    <connections>
+                        <action selector="paper:" destination="BYZ-38-t0r" id="nk1-Tl-m9P"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Battle View Controller-->
+        <scene sceneID="koU-cn-JYy">
+            <objects>
+                <viewController storyboardIdentifier="BattleViewController" id="A40-Cr-vwd" customClass="BattleViewController" customModule="MoraGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HRl-c3-FKY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-ao-Z9n">
+                                <rect key="frame" x="0.0" y="749.5" width="414" height="112.5"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjl-7Z-7u8">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="112.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="👈">
+                                                    <attributes>
+                                                        <font key="NSFont" size="75" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMora:" destination="A40-Cr-vwd" eventType="touchUpInside" id="QNf-vc-inc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jls-Ys-mB2">
+                                        <rect key="frame" x="105" y="0.0" width="99.5" height="112.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="👉">
+                                                    <attributes>
+                                                        <font key="NSFont" size="75" name=".AppleColorEmojiUI"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMora:" destination="A40-Cr-vwd" eventType="touchUpInside" id="LL5-cL-Oi9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfT-Zu-0Bl">
+                                        <rect key="frame" x="209.5" y="0.0" width="100" height="112.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="👆">
+                                                    <attributes>
+                                                        <font key="NSFont" size="75" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMora:" destination="A40-Cr-vwd" eventType="touchUpInside" id="tbC-Ma-MAl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKp-Zj-C1u">
+                                        <rect key="frame" x="314.5" y="0.0" width="99.5" height="112.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="👇">
+                                                    <attributes>
+                                                        <font key="NSFont" size="75" name="AppleColorEmoji"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedMora:" destination="A40-Cr-vwd" eventType="touchUpInside" id="Wop-ft-j7E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-uu-okv">
+                                <rect key="frame" x="103.5" y="37.5" width="207" height="537.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-yx-6Rh">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="243.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-eS-FC9">
+                                        <rect key="frame" x="0.0" y="293.5" width="207" height="244"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HR2-0h-1bE">
+                                <rect key="frame" x="171.5" y="693.5" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qO8-8R-f2w"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.74509803919999995" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qO8-8R-f2w" firstAttribute="bottom" secondItem="Cek-ao-Z9n" secondAttribute="bottom" id="Ibu-9k-pQu"/>
+                            <constraint firstItem="yW7-uu-okv" firstAttribute="width" secondItem="HRl-c3-FKY" secondAttribute="width" multiplier="0.5" id="NTW-dM-oTp"/>
+                            <constraint firstItem="Cek-ao-Z9n" firstAttribute="leading" secondItem="HRl-c3-FKY" secondAttribute="leading" id="Oug-7w-mSo"/>
+                            <constraint firstItem="HR2-0h-1bE" firstAttribute="centerX" secondItem="HRl-c3-FKY" secondAttribute="centerX" id="PA6-Pb-Ctv"/>
+                            <constraint firstItem="yW7-uu-okv" firstAttribute="height" secondItem="HRl-c3-FKY" secondAttribute="height" multiplier="0.6" id="hXW-KU-oCN"/>
+                            <constraint firstItem="qO8-8R-f2w" firstAttribute="trailing" secondItem="Cek-ao-Z9n" secondAttribute="trailing" id="o8d-Ad-guO"/>
+                            <constraint firstItem="Spa-eS-FC9" firstAttribute="centerY" secondItem="qO8-8R-f2w" secondAttribute="centerY" id="pfU-Ns-9Qn"/>
+                            <constraint firstItem="Cek-ao-Z9n" firstAttribute="top" secondItem="HR2-0h-1bE" secondAttribute="bottom" constant="20" id="qr5-qS-Dhb"/>
+                            <constraint firstItem="yW7-uu-okv" firstAttribute="centerX" secondItem="HRl-c3-FKY" secondAttribute="centerX" id="rw2-PN-hdQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mineImage" destination="Spa-eS-FC9" id="fjR-r9-98W"/>
+                        <outlet property="pcImage" destination="BJG-yx-6Rh" id="Si7-aT-c3E"/>
+                        <outlet property="timeLabel" destination="HR2-0h-1bE" id="prg-7u-4Ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkc-Sk-fTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579.7101449275362" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FRr-VU-j0f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="24c-Fe-igj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fl0-8t-W85">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M6Y-h2-Fcx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hz-Aq-mp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
 </document>

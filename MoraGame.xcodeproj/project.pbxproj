@@ -13,6 +13,7 @@
 		9CB0457C26B6A5DB0004E47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0457A26B6A5DB0004E47E /* Main.storyboard */; };
 		9CB0457E26B6A5DF0004E47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0457D26B6A5DF0004E47E /* Assets.xcassets */; };
 		9CB0458126B6A5DF0004E47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0457F26B6A5DF0004E47E /* LaunchScreen.storyboard */; };
+		9CB0458926B6C2070004E47E /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB0458826B6C2070004E47E /* BattleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9CB0457D26B6A5DF0004E47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CB0458026B6A5DF0004E47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CB0458226B6A5DF0004E47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB0458826B6C2070004E47E /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9CB0457D26B6A5DF0004E47E /* Assets.xcassets */,
 				9CB0457F26B6A5DF0004E47E /* LaunchScreen.storyboard */,
 				9CB0458226B6A5DF0004E47E /* Info.plist */,
+				9CB0458826B6C2070004E47E /* BattleViewController.swift */,
 			);
 			path = MoraGame;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB0458926B6C2070004E47E /* BattleViewController.swift in Sources */,
 				9CB0457926B6A5DB0004E47E /* ViewController.swift in Sources */,
 				9CB0457526B6A5DB0004E47E /* AppDelegate.swift in Sources */,
 				9CB0457726B6A5DB0004E47E /* SceneDelegate.swift in Sources */,
